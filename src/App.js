@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
+import Section from './components/Section/Section';
+import Footer from './components/Footer/Footer';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      
+      <section className="hero">
+        <h1>Welcome to Hyperion</h1>
+        <p>Innovating for tomorrow, delivering excellence today</p>
+        <button className="cta-button">Learn More</button>
+      </section>
+
+      <Section>
+    
+      </Section>
+      <Footer />
     </div>
   );
 }
