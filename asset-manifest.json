@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/HyperionWebsite/static/css/main.1b11bf38.css",
-    "main.js": "/HyperionWebsite/static/js/main.2db5bd05.js",
+    "main.css": "/HyperionWebsite/static/css/main.7aef7063.css",
+    "main.js": "/HyperionWebsite/static/js/main.41e0ab8d.js",
     "static/js/453.e56c81d3.chunk.js": "/HyperionWebsite/static/js/453.e56c81d3.chunk.js",
     "static/media/Modern_Landing_Image.jpg": "/HyperionWebsite/static/media/Modern_Landing_Image.7e287d9d3d5971969aa2.jpg",
     "static/media/Hyperion_Icon.png": "/HyperionWebsite/static/media/Hyperion_Icon.90a21bafe6627048d6dc.png",
     "index.html": "/HyperionWebsite/index.html",
-    "main.1b11bf38.css.map": "/HyperionWebsite/static/css/main.1b11bf38.css.map",
-    "main.2db5bd05.js.map": "/HyperionWebsite/static/js/main.2db5bd05.js.map",
+    "main.7aef7063.css.map": "/HyperionWebsite/static/css/main.7aef7063.css.map",
+    "main.41e0ab8d.js.map": "/HyperionWebsite/static/js/main.41e0ab8d.js.map",
     "453.e56c81d3.chunk.js.map": "/HyperionWebsite/static/js/453.e56c81d3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b11bf38.css",
-    "static/js/main.2db5bd05.js"
+    "static/css/main.7aef7063.css",
+    "static/js/main.41e0ab8d.js"
   ]
 }
