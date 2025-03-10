@@ -21,6 +21,21 @@
     transform: translateY(-64px); /* Increased from -32px to move text higher */
 }
 
+@keyframes shimmer {
+    0% {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(8px);
+    }
+    50% {
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+    }
+    100% {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(8px);
+    }
+}
+
 .section-title {
     color: white;
     font-size: 5rem;  /* Increased from 3.5rem */
@@ -36,4 +51,5 @@
     border-radius: 16px;  /* Rounded corners */
     border: 1px solid rgba(255, 255, 255, 0.2);  /* Subtle border */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+    animation: shimmer 3s ease-in-out infinite; /* Added animation */
 } 
