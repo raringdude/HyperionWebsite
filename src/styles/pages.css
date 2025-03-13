@@ -1,0 +1,29 @@
+:root {
+    --navbar-height: 80px;
+    --navbar-height-mobile: 100px;
+}
+
+.page {
+    padding-top: var(--navbar-height);
+    min-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .page {
+        padding-top: var(--navbar-height-mobile);
+    }
+}
+
+.page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.page section {
+    margin-bottom: 3rem;
+} 

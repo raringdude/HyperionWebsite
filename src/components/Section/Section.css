@@ -1,7 +1,7 @@
 .section {
     padding: 2rem;
     margin-top: 0; /* Removed the 80px margin */
-    background-image: url('./Modern_Landing_Image.jpg');
+    background-image: url('./Modern_Building.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,35 +21,19 @@
     transform: translateY(-64px); /* Increased from -32px to move text higher */
 }
 
-@keyframes shimmer {
-    0% {
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(8px);
-    }
-    50% {
-        background: rgba(255, 255, 255, 0.15);
-        backdrop-filter: blur(10px);
-    }
-    100% {
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(8px);
-    }
-}
-
 .section-title {
     color: white;
-    font-size: 5rem;  /* Increased from 3.5rem */
+    font-size: 5rem;
     font-weight: bold;
     font-style: italic;
     text-align: center;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    letter-spacing: -0.02em;  /* Tighter letter spacing for modern look */
-    padding: 2rem 4rem;  /* Add padding around the text */
-    background: rgba(255, 255, 255, 0.1);  /* Semi-transparent white */
-    backdrop-filter: blur(8px);  /* Creates the frosted glass effect */
-    -webkit-backdrop-filter: blur(8px);  /* For Safari support */
-    border-radius: 16px;  /* Rounded corners */
-    border: 1px solid rgba(255, 255, 255, 0.2);  /* Subtle border */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
-    animation: shimmer 3s ease-in-out infinite; /* Added animation */
-} 
+    letter-spacing: -0.02em;
+    padding: 2rem 4rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 import HyperionIcon from './Hyperion_Icon.png';
 
@@ -9,22 +10,26 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav className="navbar">
-      <div className="logo-container">
+      <Link to="/" className="logo-container" onClick={closeMenu}>
         <img src={HyperionIcon} alt="Hyperion Logo" className="logo-icon" />
         <div className="logo-text">Hyperion Residential Group</div>
-      </div>
+      </Link>
 
       <button className="mobile-menu-button" onClick={toggleMenu}>
         {isMenuOpen ? '✕' : '☰'}
       </button>
 
       <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <Link to="/our-people" onClick={closeMenu}>Our People</Link>            
+        <Link to="/properties" onClick={closeMenu}>Properties</Link>
+        <Link to="/case-studies" onClick={closeMenu}>Case Studies</Link>
+        <a href="#contact" onClick={closeMenu}>Contact</a>
       </div>
     </nav>
   );
