@@ -4,6 +4,8 @@ import '../styles/pages.css';
 import '../styles/OurPeople.css';
 // Import just Jerry's image for now
 import jamesImage from '../components/Assets/Headshots/JamesG_Headshot.jpeg';
+import stevenImage from '../components/Assets/Headshots/SteveD_Headshot.JPG';
+import andrienImage from '../components/Assets/Headshots/AndrienW_Headshot.PNG';
 
 const OurPeople = () => {
     return (
@@ -25,12 +27,20 @@ const OurPeople = () => {
                     <p>Director Of Technology</p>
                 </div>
                 <div className="person-card">
-                    <div className="person-image placeholder"></div>
+                <img 
+                        src={andrienImage} 
+                        alt="Andrien White" 
+                        className="person-image"
+                    />
                     <h3>Andrien White</h3>
                     <p>Business Development</p>
                 </div>
                 <div className="person-card">
-                    <div className="person-image placeholder"></div>
+                    <img 
+                        src={stevenImage} 
+                        alt="Steven Donovan" 
+                        className="person-image"
+                    />
                     <h3>Steven Donovan</h3>
                     <p>Financial Director</p>
                 </div>
