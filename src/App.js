@@ -8,14 +8,15 @@ import OurPeople from './pages/OurPeople';
 import CaseStudies from './pages/CaseStudies';
 import Properties from './pages/Properties';
 import Contact from './pages/Contact';
+import Home from './pages/Home';
 
 function App() {
   return (
-    <Router basename="/HyperionWebsite">
+    <Router>
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Section />} />
+          <Route path="/" element={<Home />} />
           <Route path="/our-people" element={<OurPeople />} />
           <Route path="/case-studies" element={<CaseStudies />} />
           <Route path="/properties" element={<Properties />} />
