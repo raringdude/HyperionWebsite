@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import HyperionIcon from './Hyperion_Icon.png';
+import HyperionIcon from '../Assets/Logos/HyperionICON.png';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

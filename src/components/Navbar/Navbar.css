@@ -1,21 +1,18 @@
 :root {
-    --navbar-height: 80px;  /* Increased from 64px to 80px */
-    --navbar-height-mobile: 100px;
+    --navbar-padding: 0.05rem;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 1rem;
     background-color: #f8f8f8;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: var(--navbar-padding) 1rem;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    height: var(--navbar-height);
     box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo-container {
@@ -24,14 +21,12 @@
     gap: 1rem;
     text-decoration: none;
     color: inherit;
-    cursor: pointer;
-    -webkit-user-select: none;  /* Prevent text selection */
-    user-select: none;
-    transition: transform 0.2s ease; /* Add smooth transition */
+    padding: 1rem 0;
+    transition: transform 0.3s ease-in-out;
 }
 
 .logo-icon {
-    width: 100px;
+    width: 90px;
     height: auto;
 }
 
@@ -68,20 +63,15 @@
 }
 
 .logo-container:hover {
-    text-decoration: none;  /* Ensure no underline appears on hover */
-    color: inherit;  /* Maintain text color on hover */
-    transform: scale(1.05); /* Scale up by 5% on hover */
+    transform: scale(1.05);
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Mobile styles */
 @media screen and (max-width: 1024px) {
     .navbar {
-        justify-content: center;
         padding: 0.5rem 1rem;
-        position: fixed;
-        min-height: var(--navbar-height-mobile);
-        width: 100%;
-        box-sizing: border-box;
     }
 
     .logo-container {
@@ -99,9 +89,7 @@
     }
 
     .logo-container:hover {
-        transform: translateX(-50%);  /* Keep centered, no scale */
-        text-decoration: none;
-        color: inherit;
+        transform: none;
     }
 
     .mobile-menu-button {
