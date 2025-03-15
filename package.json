@@ -1,7 +1,7 @@
 {
   "name": "hyperion-website",
   "version": "0.1.0",
-  "homepage": "https://raringdude.github.io/HyperionWebsite",
+  "homepage": "https://hyperionresidentialgroup.com",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
