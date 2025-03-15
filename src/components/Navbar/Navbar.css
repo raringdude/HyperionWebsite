@@ -1,5 +1,6 @@
 :root {
     --navbar-padding: 0.05rem;
+    --navbar-height-mobile: 120px;  /* Added explicit mobile height */
 }
 
 .navbar {
@@ -71,25 +72,32 @@
 /* Mobile styles */
 @media screen and (max-width: 1024px) {
     .navbar {
-        padding: 0.5rem 1rem;
+        height: var(--navbar-height-mobile);  /* Use explicit height */
+        padding: 1rem;
+        justify-content: center;
+        position: fixed;  /* Ensure it's fixed */
+        top: 0;  /* Ensure it starts at top */
+        left: 0;  /* Ensure full width alignment */
+        right: 0;  /* Ensure full width alignment */
     }
 
     .logo-container {
         flex-direction: column;
         align-items: center;
-        gap: 0rem;  /* Reduced from 0.25rem to 0.1rem */
-        padding: 0.5rem 0;
+        gap: 0.5rem;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
         z-index: 1;
-        transition: none;
         width: auto;
         margin: 0 auto;
+        transition: none;  /* Remove transition on mobile */
     }
 
     .logo-container:hover {
-        transform: none;
+        transform: translateX(-50%);  /* Keep centered, no scale effect */
+        text-decoration: none;
+        color: inherit;
     }
 
     .mobile-menu-button {
@@ -108,12 +116,11 @@
     .logo-icon {
         width: 60px;
         height: 60px;
+        margin: 0.25rem 0;  /* Added margin around logo */
     }
 
     .logo-text {
-        font-size: 1rem;
-        text-align: center;
-        white-space: nowrap;
+        margin: 0.25rem 0;  /* Added margin around text */
     }
 
     .nav-links {

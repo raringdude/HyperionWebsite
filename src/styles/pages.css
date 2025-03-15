@@ -3,11 +3,11 @@
     --logo-height: 90px;
     --total-navbar-height: calc(var(--navbar-padding) * 2 + var(--logo-height) + 2rem);
     --navbar-height: 80px;
-    --navbar-height-mobile: 100px;
+    --navbar-height-mobile: 120px;
 }
 
 .page {
-    padding-top: var(--total-navbar-height);
+    padding-top: var(--navbar-height-mobile);
     min-height: 100vh;
     width: 100%;
     max-width: 100%;
@@ -19,6 +19,9 @@
     :root {
         --navbar-padding: 0.5rem;
         --logo-height: 60px;
+    }
+    .page {
+        padding-top: var(--navbar-height-mobile);
     }
 }
 
