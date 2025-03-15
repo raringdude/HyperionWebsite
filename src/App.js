@@ -8,7 +8,7 @@ import OurPeople from './pages/OurPeople';
 import CaseStudies from './pages/CaseStudies';
 import Properties from './pages/Properties';
 import Contact from './pages/Contact';
-import Home from './pages/Home';
+
 
 function App() {
   return (
