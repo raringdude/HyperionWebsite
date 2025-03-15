@@ -1,9 +1,11 @@
 .people-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    margin-top: 2rem;
-    width: 100%;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 .person-card {
@@ -15,8 +17,8 @@
 }
 
 .person-image {
-    width: 280px;
-    height: 389px;
+    width: 320px;
+    height: 445px;
     object-fit: cover;
     background-color: #e0e0e0;
     margin-bottom: 1rem;
@@ -40,9 +42,10 @@
 }
 
 .cta-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 4rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
 }
 
 .cta-button {
@@ -75,14 +78,14 @@
 
 /* Mobile responsive */
 @media screen and (max-width: 1024px) {
-    .person-image {
-        width: 250px;
-        height: 347px;
-    }
-    
     .people-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+    }
+    
+    .person-image {
+        width: 250px;
+        height: 347px;
     }
     
     .cta-container {

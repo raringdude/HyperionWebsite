@@ -11,14 +11,14 @@ const OurPeople = () => {
             <h1>Our People</h1>
             <div className="people-grid">
                 <div className="person-card">
-                <div className="person-image placeholder"></div>
+                    <div className="person-image placeholder"></div>
                     <h3>Jerry Wojenski</h3>
                     <p>CEO</p>
                 </div>
                 <div className="person-card">
-                <img 
+                    <img 
                         src={jamesImage} 
-                        alt="Jerry Wojenski" 
+                        alt="James Guidi" 
                         className="person-image"
                     />
                     <h3>James Guidi</h3>
@@ -27,7 +27,12 @@ const OurPeople = () => {
                 <div className="person-card">
                     <div className="person-image placeholder"></div>
                     <h3>Andrien White</h3>
-                    <p></p>
+                    <p>Business Development</p>
+                </div>
+                <div className="person-card">
+                    <div className="person-image placeholder"></div>
+                    <h3>Steven Donovan</h3>
+                    <p>Financial Director</p>
                 </div>
             </div>
             <div className="cta-container">
