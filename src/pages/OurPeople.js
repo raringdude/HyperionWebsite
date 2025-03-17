@@ -42,7 +42,7 @@ const OurPeople = () => {
                         className="person-image"
                     />
                     <h3>Steven Donovan</h3>
-                    <p>Financial Director</p>
+                    <p>Director of Finance</p>
                 </div>
             </div>
             <div className="cta-container">
