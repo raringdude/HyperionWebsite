@@ -50,12 +50,12 @@ const OurPeople = () => {
                     <p>Director of Finance</p>
                 </div>
             </div>
-            <div className="cta-container">
+            {/* <div className="cta-container">
                 <Link to="/properties" className="cta-button">
                     Check Out Our Properties
                     <span className="arrow">→</span>
                 </Link>
-            </div>
+            </div> */}
         </main>
     );
 };

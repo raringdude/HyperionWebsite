@@ -23,8 +23,8 @@ const Navbar = () => {
 
             <div className={`nav-links ${isOpen ? 'active' : ''}`}>
                 <Link to="/our-people" onClick={toggleMenu}>Our People</Link>
-                <Link to="/properties" onClick={toggleMenu}>Properties</Link>
-                <Link to="/case-studies" onClick={toggleMenu}>Case Studies</Link>
+                {/* <Link to="/properties" onClick={toggleMenu}>Properties</Link>
+                <Link to="/case-studies" onClick={toggleMenu}>Case Studies</Link> */}
                 <Link to="/contact" onClick={toggleMenu}>Contact</Link>
             </div>
         </nav>
