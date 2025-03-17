@@ -1,38 +1,34 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import HyperionIcon from '../Assets/Logos/HyperionICON.png';
+import logo from '../Assets/Logos/HyperionICON.png';
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
 
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
+    return (
+        <nav className="navbar">
+            <Link to="/" className="logo-container">
+                <img src={logo} alt="Logo" className="logo-icon" />
+                <span className="logo-text">Hyperion Residential Group</span>
+            </Link>
 
-  return (
-    <nav className="navbar">
-      <Link to="/" className="logo-container" onClick={closeMenu}>
-        <img src={HyperionIcon} alt="Hyperion Logo" className="logo-icon" />
-        <div className="logo-text">Hyperion Residential Group</div>
-      </Link>
+            <div className="menu-icon" onClick={toggleMenu}>
+                <span className={`hamburger ${isOpen ? 'open' : ''}`}></span>
+            </div>
 
-      <button className="mobile-menu-button" onClick={toggleMenu}>
-        {isMenuOpen ? '✕' : '☰'}
-      </button>
-
-      <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-        <Link to="/our-people" onClick={closeMenu}>Our People</Link>            
-        <Link to="/properties" onClick={closeMenu}>Properties</Link>
-        <Link to="/case-studies" onClick={closeMenu}>Case Studies</Link>
-        <a href="#contact" onClick={closeMenu}>Contact</a>
-      </div>
-    </nav>
-  );
+            <div className={`nav-links ${isOpen ? 'active' : ''}`}>
+                <Link to="/our-people" onClick={toggleMenu}>Our People</Link>
+                <Link to="/properties" onClick={toggleMenu}>Properties</Link>
+                <Link to="/case-studies" onClick={toggleMenu}>Case Studies</Link>
+                <Link to="/contact" onClick={toggleMenu}>Contact</Link>
+            </div>
+        </nav>
+    );
 };
 
 export default Navbar; 
