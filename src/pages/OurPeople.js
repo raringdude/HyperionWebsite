@@ -20,7 +20,7 @@ const OurPeople = () => {
                         className="person-image"
                     />
                     <h3>Jerry Wojenski</h3>
-                    <p>CEO</p>
+                    <p>President</p>
                 </div>
                 <div className="person-card">
                     <img 
