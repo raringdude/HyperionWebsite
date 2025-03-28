@@ -31,7 +31,7 @@ const OurPeople = () => {
                     <h3>James Guidi</h3>
                     <p>Director Of Technology</p>
                 </div>
-                <div className="person-card">
+                {/* <div className="person-card">
                 <img 
                         src={andrienImage} 
                         alt="Andrien White" 
@@ -39,7 +39,7 @@ const OurPeople = () => {
                     />
                     <h3>Andrien White</h3>
                     <p>Business Development</p>
-                </div>
+                </div> */}
                 <div className="person-card">
                     <img 
                         src={stevenImage} 
